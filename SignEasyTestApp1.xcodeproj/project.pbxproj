@@ -12,7 +12,25 @@
 		466D1F081D93CA3000F584EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466D1F061D93CA3000F584EF /* Main.storyboard */; };
 		466D1F0A1D93CA3000F584EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466D1F091D93CA3000F584EF /* Assets.xcassets */; };
 		466D1F0D1D93CA3000F584EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466D1F0B1D93CA3000F584EF /* LaunchScreen.storyboard */; };
+		466D1F161D93CAF700F584EF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1F151D93CAF700F584EF /* Client.swift */; };
+		466D1F1A1D93DC9600F584EF /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1F191D93DC9600F584EF /* Convenience.swift */; };
+		466D1F1C1D93E05700F584EF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1F1B1D93E05700F584EF /* Data.swift */; };
+		466D1F921D94CFCF00F584EF /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1F911D94CFCF00F584EF /* HeaderCell.swift */; };
+		466D1F941D94CFF000F584EF /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1F931D94CFF000F584EF /* BaseCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		466D1F691D94026900F584EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		466D1EFF1D93CA3000F584EF /* SignEasyTestApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignEasyTestApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,15 @@
 		466D1F091D93CA3000F584EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466D1F0C1D93CA3000F584EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466D1F0E1D93CA3000F584EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466D1F151D93CAF700F584EF /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		466D1F191D93DC9600F584EF /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		466D1F1B1D93E05700F584EF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		466D1F6A1D94028F00F584EF /* SignEasyTestApp1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignEasyTestApp1.entitlements; sourceTree = "<group>"; };
+		466D1F801D9404EB00F584EF /* DocProviderFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocProviderFileProvider.entitlements; sourceTree = "<group>"; };
+		466D1F811D9404EB00F584EF /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		466D1F831D9404EB00F584EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466D1F911D94CFCF00F584EF /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		466D1F931D94CFF000F584EF /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				466D1F011D93CA3000F584EF /* SignEasyTestApp1 */,
+				466D1F7E1D9404EB00F584EF /* DocProviderFileProvider */,
 				466D1F001D93CA3000F584EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +82,9 @@
 		466D1F011D93CA3000F584EF /* SignEasyTestApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				466D1F901D94CFC300F584EF /* View */,
+				466D1F6A1D94028F00F584EF /* SignEasyTestApp1.entitlements */,
+				466D1F141D93CA3F00F584EF /* Model */,
 				466D1F021D93CA3000F584EF /* AppDelegate.swift */,
 				466D1F041D93CA3000F584EF /* ViewController.swift */,
 				466D1F061D93CA3000F584EF /* Main.storyboard */,
@@ -62,6 +93,43 @@
 				466D1F0E1D93CA3000F584EF /* Info.plist */,
 			);
 			path = SignEasyTestApp1;
+			sourceTree = "<group>";
+		};
+		466D1F141D93CA3F00F584EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				466D1F151D93CAF700F584EF /* Client.swift */,
+				466D1F191D93DC9600F584EF /* Convenience.swift */,
+				466D1F1B1D93E05700F584EF /* Data.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		466D1F7E1D9404EB00F584EF /* DocProviderFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				466D1F811D9404EB00F584EF /* FileProvider.swift */,
+				466D1F831D9404EB00F584EF /* Info.plist */,
+				466D1F7F1D9404EB00F584EF /* Supporting Files */,
+			);
+			path = DocProviderFileProvider;
+			sourceTree = "<group>";
+		};
+		466D1F7F1D9404EB00F584EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				466D1F801D9404EB00F584EF /* DocProviderFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		466D1F901D94CFC300F584EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				466D1F911D94CFCF00F584EF /* HeaderCell.swift */,
+				466D1F931D94CFF000F584EF /* BaseCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +142,7 @@
 				466D1EFB1D93CA3000F584EF /* Sources */,
 				466D1EFC1D93CA3000F584EF /* Frameworks */,
 				466D1EFD1D93CA3000F584EF /* Resources */,
+				466D1F691D94026900F584EF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -96,7 +165,13 @@
 				TargetAttributes = {
 					466D1EFE1D93CA3000F584EF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 22VB34TB6Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,7 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				466D1F051D93CA3000F584EF /* ViewController.swift in Sources */,
+				466D1F1C1D93E05700F584EF /* Data.swift in Sources */,
+				466D1F1A1D93DC9600F584EF /* Convenience.swift in Sources */,
 				466D1F031D93CA3000F584EF /* AppDelegate.swift in Sources */,
+				466D1F941D94CFF000F584EF /* BaseCell.swift in Sources */,
+				466D1F921D94CFCF00F584EF /* HeaderCell.swift in Sources */,
+				466D1F161D93CAF700F584EF /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +289,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -250,6 +331,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -257,24 +339,34 @@
 		466D1F121D93CA3000F584EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignEasyTestApp1/SignEasyTestApp1.entitlements;
+				DEVELOPMENT_TEAM = 22VB34TB6Y;
 				INFOPLIST_FILE = SignEasyTestApp1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.SignEasyTestApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		466D1F131D93CA3000F584EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignEasyTestApp1/SignEasyTestApp1.entitlements;
+				DEVELOPMENT_TEAM = 22VB34TB6Y;
 				INFOPLIST_FILE = SignEasyTestApp1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.SignEasyTestApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

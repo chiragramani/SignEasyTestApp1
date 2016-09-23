@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DocProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DocProviderFileProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SignEasyTestApp1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,26 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>466D1EFE1D93CA3000F584EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466D1F471D94026900F584EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466D1F551D94026900F584EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466D1F6E1D9404EA00F584EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466D1F7C1D9404EB00F584EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
